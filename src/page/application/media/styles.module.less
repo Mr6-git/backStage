@@ -1,0 +1,84 @@
+.avaImgWrap {
+	width: 108px;
+	height: 108px;
+	padding: 1px;
+	border-radius: 5px;
+	position: relative;
+	border: 1px dashed #e4e4e4;
+}
+
+.avatarImg {
+	display: inline-block;
+	width: 104px;
+	height: 104px;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.closeIcon {
+	position: absolute;
+	top: -9px;
+	right: -9px;
+	cursor: pointer;
+}
+
+.articleImg {
+	:global {
+		.ant-upload-list-picture-card {
+			float: none !important;
+		}
+		.ant-upload-list-item {
+			width: 131px;
+			height: 98px;
+			margin-bottom: 8px;
+			.ant-upload-list-item-thumbnail {
+				img {
+					width: 113px;
+					height: 80px;
+				}
+			}
+		}
+		.ant-upload-select {
+			width: 131px;
+			height: 98px;
+			margin-right: 0px;
+			margin-bottom: 0px;
+		}
+	}
+}
+
+.schemeInfo {
+	margin-bottom: 35px;
+	h6 {
+		font-size: 14px;
+		font-weight: normal;
+	}
+	.optionBox {
+		margin-bottom: 18px;
+		margin-top: 10px;
+		dd {
+			border: 1px solid #E8E8E8;
+			width: 132px;
+			display: inline-block;
+			margin: 5px;
+			padding: 7px 0px;
+			text-align: center;
+			font-size: 13px;
+			cursor: pointer;
+			label {
+				display: block;
+				color: #999999;
+				font-size: 12px;
+				cursor: pointer;
+			}
+		}
+		dd.selected {
+			border-color: #338DDD;
+		}
+	}
+	:global {
+		.ant-col {
+			margin-bottom: 5px;
+		}
+	}
+}

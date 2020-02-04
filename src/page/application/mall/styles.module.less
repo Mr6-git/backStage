@@ -1,0 +1,353 @@
+.goodsInfo {
+	display: inline-block;
+	margin-left: 10px;
+	vertical-align: middle;
+	padding-bottom: 3px;
+	max-width: 322px;
+}
+.detailWrap {
+    // min-width: 980px;
+    .titleBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+        .titleLeft {
+            display: flex;
+            align-items: center;
+            color: #1a1a1a;
+            font-size: 20px;
+            font-weight: bold;
+            .client {
+                margin-left: 14px;
+                margin-right: 20px;
+            }
+        }
+    }
+    .infoBox {
+        padding: 0 24px 0 70px;
+        .infoLeft {
+            padding: 12px 0;
+        }
+        .tagWrap {
+            display: flex;
+            padding: 12px 0;
+            border-top: 1px solid #e8e8e8;
+            :global {
+                .ant-tag {
+                    margin-left: 6px;
+                }
+            };
+        }
+    }
+    .rightBox {
+        display: flex;
+        justify-content: flex-end;
+        padding-top: 15px;
+    }
+    .rightItem {
+        text-align: right;
+        & > label {
+            color: #999999;
+        }
+        & > div {
+            color: #1a1a1a;
+            font-size: 21px;
+        }
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+    p {
+        margin-bottom: 10px;
+        color: #333333;
+        white-space: nowrap;
+        & > span {
+            color: #6a6a6a;
+        }
+    }
+}
+
+.detailContent {
+    height: 100%;
+    padding:  1px 24px 50px;
+    background: #F0F2F5;
+    .cardBody {
+        .divColTitle {
+            font-weight: bold;
+        }
+    }
+}
+
+.progress {
+    position: relative;
+    height: 121px;
+    width: 66%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    .step {
+        left: 24px;
+        top: 0;
+        width: 180px;
+        height: 100%;
+    }
+    .line {
+        margin-top: -10px;
+        width: 315px;
+        height: 50%;
+        border-bottom: 1px solid #ccc;
+    }
+    .stepTwo {
+        position: absolute;
+        left: 290px;
+        top: 0;
+        width: 150px;
+        height: 100%;
+    }
+}
+
+.stepNum {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 32px 0 0 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    color: #ccc;
+}
+
+.stepInfo {
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 10px;
+    color: #999999;
+}
+
+.checkNUm {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin: 32px 0 0 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-size: 20px;
+    background: #1890FF;
+    color: #fff;
+}
+
+.checkInfo {
+    display: inline-block;
+    font-size: 17px;
+    margin-left: 10px;
+    color: #000;
+    font-weight: bold;
+}
+
+.footer {
+    position: fixed;
+    border-top: 1px solid #ccc;
+    background: #fff;
+    width: 100%;
+    bottom: 0px;
+    height: 80px;
+}
+
+.Sfooter {
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.nextBtn {
+    width: 100px;
+    position: fixed;
+    height: 35px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.lastBtn {
+    position: fixed;
+    width: 100px;
+    height: 35px;
+    bottom: 20px;
+    right: 140px;
+}
+
+.avaImgWrap {
+	width: 108px;
+	height: 108px;
+	padding: 1px;
+	border-radius: 5px;
+	position: relative;
+	border: 1px dashed #e4e4e4;
+}
+
+.avatarImg {
+	display: inline-block;
+	width: 104px;
+	height: 104px;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.closeIcon {
+	position: absolute;
+	top: -9px;
+	right: -9px;
+	cursor: pointer;
+}
+
+.treeGap {
+	:global {
+		.ant-dropdown-link {
+			position: absolute;
+			right: 6px;
+			display: none;
+			z-index: 2;
+			color: #000;
+		}
+		.ant-tree-node-content-wrapper:hover {
+			.ant-dropdown-link {
+				display: inline;
+			}
+		}
+		.ant-tree-title {
+			display: inline-block;
+			position: initial !important;
+			width: 100%;
+		}
+		.ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper:hover,
+		.ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper:hover {
+			background: #e6f7ff;
+		}
+		.ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper.ant-tree-node-selected,
+		.ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-node-content-wrapper.ant-tree-node-selected {
+			background: #1890ff;
+		}
+		.ant-tree li .ant-tree-node-content-wrapper {
+			width: calc(100% - 30px);
+			padding: 0;
+		}
+		.ant-tree.ant-tree-directory > li span.ant-tree-switcher,
+		.ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-switcher {
+			margin: 8px 0 0 3px !important;
+		}
+	}
+	.listWrap {
+		display: none;
+		position: absolute;
+		right: 0px;
+		top: 25px;
+		padding: 0;
+		border: none !important;
+		border-radius: 4px;
+	}
+	.treeLi {
+		display: inline-block;
+		position: relative;
+		width: calc(100% - 15px);
+		z-index: 1;
+		& > span {
+			display: inline-block;
+			width: calc(100% - 25px);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+
+}
+
+.treeMenu {
+	min-width: 210px;
+	max-width: 260px;
+	flex: none;
+	border-right: #e3e3e3 1px solid;
+    overflow-y: hidden;
+    .title {
+        width: 100%;
+        height: 40px;
+        text-indent: 15px;
+        line-height: 40px;
+    }
+    .treeList {
+        width: 100%;
+        height: 40px;
+        text-indent: 20px;
+        line-height: 40px;
+    }
+    .chooseList {
+        width: 100%;
+        height: 40px;
+        text-indent: 20px;
+        line-height: 40px;
+        background: #E6F7FF;
+    }
+}
+
+.ticketTabBtn {
+    height: 32px;
+    padding: 0 15px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+}
+
+.chooseAttr {
+    position: relative;
+}
+
+.attrBtn {
+    position: absolute;
+    right: -517px;
+    width: 500px;
+    top: -7px;
+}
+
+.mapStyle{
+    position: relative;
+    width: 800px;
+    height: 450px;
+    margin-bottom: 24px;
+}
+
+.mapSearch {
+    position: absolute;
+    width: 270px;
+    height: 35px;
+    border-radius: 6px;
+    text-indent: 15px;
+    border: 1px solid #bbb;
+    z-index: 1001;
+    left: 20px;
+    top: 20px;
+}
+
+.iconFlag {
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.tableCount {
+    height: 80px;
+    line-height: 80px;
+    text-align: right;
+    font-size: 16px;
+    color: #999999;
+}
+
+.payNum {
+    color: red;
+    font-size: 22px;
+    margin: 0px 30px 0px 0px;
+}
+
+.checkBtn {
+    border: 1px solid #1890FF;
+    color: #1890FF;
+}

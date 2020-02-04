@@ -1,0 +1,94 @@
+.flexCenter {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.flexSb {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flexColumn {
+	flex-direction: column;
+}
+
+.loginWrap {
+	.flexSb;
+	.flexColumn;
+	height: 100%;
+	
+	.loginContent {
+		margin-top: 70px;
+		background: #fff;
+		padding: 40px 50px 50px;
+		border: 1px solid #e9e9e9;
+		border-radius: 5px;
+		.logo {
+			color: @blue-color;
+			font-size: 50px;
+		}
+		.title {
+			.flexCenter;
+			color: @default-color;
+			font-size: 38px;
+			& > span {
+				margin-left: 10px;
+			}
+		}
+		.loginBox {
+			width: 380px;
+			margin: 30px auto 0;
+			.boxBottom {
+				.flexSb;
+			}
+			.pwdBtn {
+				color: @blue-color;
+				cursor: pointer;
+			}
+		}
+	}
+	.footer {
+		.flexCenter;
+		padding: 0 16px;
+		margin: 48px 0 24px;
+	}
+	:global {
+		.ant-form-explain {
+			text-align: left;
+		}
+	}
+}
+
+.dingd{
+	width: 365px;
+	height: 400px;
+	position: absolute;
+	top: 240px;
+	margin-left: 10px;
+	// display: none;
+}
+
+.dingBg {
+	width: 365px;
+	height: 250px;
+}
+
+.resetTitle {
+	color: #666666;
+	text-align: center;
+	margin: 30px 0;
+}
+
+.resetBox {
+	width: 350px;
+	margin: 25px auto;
+	.boxBottom {
+		.flexSb;
+	}
+	.pwdBtn {
+		color: @blue-color;
+		cursor: pointer;
+	}
+}

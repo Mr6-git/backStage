@@ -1,0 +1,29 @@
+.tableGap {
+	:global {
+		span.ant-table-row-expand-icon,
+		th.ant-table-expand-icon-th,
+		td.ant-table-row-expand-icon-cell {
+			display: none;
+		}
+		.ant-table-expand-icon-col {
+			display: none;
+		}
+		.operate-wrap {
+			width: 45px;
+			&.close {
+				.open {
+					display: none;
+				}
+				.close {
+					display: inline-block;
+				}
+			}
+			.open {
+				display: inline-block;
+			}
+			.close {
+				display: none;
+			}
+		}
+	}
+}

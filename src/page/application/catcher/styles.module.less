@@ -1,0 +1,227 @@
+
+.detailWrap {
+	// min-width: 980px;
+	.titleBox {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 24px;
+		.titleLeft {
+			display: flex;
+			align-items: center;
+			color: #1a1a1a;
+			font-size: 20px;
+			font-weight: bold;
+			.client {
+				margin-left: 14px;
+				margin-right: 20px;
+			}
+		}
+	}
+	.infoBox {
+		padding: 0 24px 0 70px;
+		.infoLeft {
+			padding: 12px 0;
+		}
+		.tagWrap {
+			display: flex;
+			padding: 12px 0;
+			border-top: 1px solid #e8e8e8;
+			:global {
+				.ant-tag {
+					margin-left: 6px;
+				}
+			};
+		}
+	}
+	.rightBox {
+		// display: flex;
+		// justify-content: flex-end;
+		padding-top: 15px;
+	}
+	.rightItem {
+		text-align: center;
+		& > label {
+			color: #999999;
+		}
+		& > div {
+			color: #1a1a1a;
+			font-size: 21px;
+		}
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+	p {
+		margin-bottom: 10px;
+		color: #333333;
+		white-space: nowrap;
+		& > span {
+			color: #6a6a6a;
+		}
+	}
+}
+
+.detailContent {
+	height: 100%;
+	padding:  16px 24px 50px;
+	background: #F0F2F5;
+	.cardBody {
+		.divColTitle {
+			font-weight: bold;
+		}
+	}
+}
+
+.creditWrap {
+	width: 100%;
+	.creditItem {
+		padding: 16px;
+		margin-bottom: 10px;
+		background: #F2F2F2;
+		border-radius: 1px;
+		.type {
+			color: #999999;
+			font-size: 13px;
+		}
+		.number {
+			color: #7B7B7B;
+			font-size: 24px;
+			font-weight: 200;
+		}
+	}
+}
+
+.noCredit {
+	width: 100%;
+	color: #aaa;
+	text-align: center;
+}
+
+.tableSearch {
+	position: absolute;
+	right: 24px;
+	top: 10px;
+	width: 200px;
+	z-index: 1;
+}
+
+.flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flexCenterVer {
+	display: flex;
+}
+
+.transfer {
+	:global {
+		.ant-form-item {
+			margin-bottom: 0;
+		}
+	}
+}
+.pickerTop{
+	position: absolute;
+	top:11px;
+	right:45px;
+}
+.tagsBox {
+	height: 120px;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #e8e8e8;
+	border-radius: 3px;
+	overflow-y: auto;
+}
+
+.submitBtn {
+	padding: 0 8px 0 12px;
+	background: #fff;
+	border: none;
+	color: #1890FF;
+	box-shadow: none;
+}
+
+.cancelBtn {
+	padding: 8px;
+	margin-left: 2px;
+	background: #fff;
+	border: none;
+	box-shadow: none;
+}
+
+// quickFilter page
+.addTag {
+	width: 100%;
+	height: 180px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 1px dashed #D9D9D9;
+	border-radius: 4px;
+	color: #999;
+	cursor: pointer;
+}
+.cardItem {
+	color: #999;
+	cursor: default;
+	h3 {
+		margin-bottom: 12px;
+		color: #1a1a1a;
+		font-weight: bold;
+	}
+	.infoItem {
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.infoItem:not(:last-child) {
+		margin-bottom: 5px;
+	}
+}
+
+.avaImgWrap {
+	width: 108px;
+	height: 108px;
+	padding: 1px;
+	border-radius: 5px;
+	position: relative;
+	border: 1px dashed #e4e4e4;
+}
+
+.avatarImg {
+	display: inline-block;
+	width: 104px;
+	height: 104px;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.closeIcon {
+	position: absolute;
+	top: -9px;
+	right: -9px;
+	cursor: pointer;
+}
+
+.orange {
+	color : #f60;
+}
+.grey {
+	color: #999999;
+}
+.blue {
+	color: #1890FF !important;
+}
+.green {
+	color: green;
+}
+.red {
+	color: #FF7B5A;
+}
+.tagIcon {
+	transform: rotateY(180deg);
+}

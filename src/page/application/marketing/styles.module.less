@@ -1,0 +1,100 @@
+.detailWrap {
+	width: 100%;
+	background: #ffffff;
+	overflow-x: hidden;
+	.titleBox {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0px 24px;
+		.titleLeft {
+			display: flex;
+			align-items: center;
+			color: #1a1a1a;
+			font-size: 20px;
+			font-weight: bold;
+			.client {
+				margin-left: 14px;
+			}
+		}
+	}
+	.infoBox {
+		padding: 0 24px 0 70px;
+		.infoLeft {
+			padding: 12px 0;
+		}
+		.tagWrap {
+			display: flex;
+			padding: 12px 0;
+			border-top: 1px solid #e8e8e8;
+			:global {
+				.ant-tag {
+					margin-left: 6px;
+				}
+			};
+		}
+	}
+	.rightBox {
+		display: flex;
+		justify-content: flex-end;
+		padding-top: 15px;
+	}
+	.rightItem {
+		text-align: right;
+		& > label {
+			color: #999999;
+		}
+		& > div {
+			color: #1a1a1a;
+			font-size: 21px;
+		}
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+	}
+	p {
+		margin-bottom: 10px;
+		color: #333333;
+		white-space: nowrap;
+		& > span {
+			color: #6a6a6a;
+		}
+	}
+}
+
+.detailContent {
+	height: 100%;
+	padding:  16px 24px 50px;
+	background: #F0F2F5;
+	.cardBody {
+		.divColTitle {
+			font-weight: bold;
+		}
+	}
+}
+
+.avaImgWrap {
+	width: 104px;
+	height: 104px;
+	padding: 1px;
+	border-radius: 4px;
+	position: relative;
+	border: 1px dashed #e4e4e4;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+.avatarImg {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.closeIcon {
+	position: absolute;
+	top: -9px;
+	right: -9px;
+	cursor: pointer;
+}

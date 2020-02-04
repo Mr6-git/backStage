@@ -1,0 +1,113 @@
+// inout page
+.inout {
+	.contTop {
+		display: flex;
+		& > div {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			width: 33.33%;
+			h4 {
+				color: #999999;
+			}
+			.number {
+				font-size: 24px;
+			}
+			&:not(:last-child) {
+				border-right: 1px solid #e8e8e8;
+			}
+		}
+	}
+}
+.blue {
+	color: #1890FF;
+}
+.green {
+	color: #4caf50;
+}
+.orange {
+	color: #FF7D27;
+}
+.black {
+	color: #272727;
+}
+
+// cashing page
+.cardItemGap {
+	.itemText {
+		line-height: 1.5;
+	}
+	:global {
+		.ant-form-item-control {
+			padding: 7px 0 3px;
+		}
+	}
+}
+.itemList {
+	padding: 10px 0 0 18px;
+	li {
+		line-height: 1.5;
+	}
+}
+
+// cashing - detail
+.detailWrap {
+	.titleBox {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 24px;
+		.titleLeft {
+			display: flex;
+			align-items: center;
+			color: #1a1a1a;
+			font-size: 20px;
+			font-weight: bold;
+			.client {
+				margin-left: 14px;
+			}
+		}
+	}
+	.infoBox {
+		position: relative;
+		padding: 0 70px;
+		.infoLeft {
+			display: flex;
+			width: calc(100% - 150px);
+			padding: 12px 0;
+			&:not(:last-child) {
+				border-bottom: 1px solid #e8e8e8;
+			}
+		}
+	}
+	.detailMain {
+		padding: 24px 24px;
+		background: #F0F2F5;
+	}
+	p {
+		margin-bottom: 10px;
+		color: #333333;
+		& > span {
+			color: #6a6a6a;
+		}
+	}
+}
+
+.formItemGap_R {
+	:global {
+		.ant-advanced-search-form .ant-form-item {
+			margin-bottom: 0;
+		}
+	}
+}
+.formItemGap_P {
+	:global {
+		.ant-advanced-search-form .ant-form-item {
+			margin-bottom: 0;
+		}
+		.ant-advanced-search-form .ant-form-item:nth-last-child(2) {
+			margin-bottom: 8px;
+		}
+	}
+}

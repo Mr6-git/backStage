@@ -1,0 +1,111 @@
+.cardBox{
+	:global{
+		.ant-card-body{
+			padding: 12px 0 0;
+			.ant-tabs-bar{
+				width: 210px;
+				.ant-tabs-tab{
+					text-align: left;
+					height: 46px;
+					margin: 0;
+					display: flex;
+					align-items: center;
+					&.ant-tabs-tab-active{
+						background: #e2f6ff;
+					}
+				}
+				.ant-tabs-ink-bar{
+					width: 4px;
+				}
+			}
+		}
+	};
+}
+.setting {
+	padding: 8px 0 30px;
+	.setContent {
+		display: flex;
+		padding-top: 12px;
+		.rightInfo {
+			padding-left: 104px;
+			.rightTitle {
+				padding: 0 0 8px;
+				color: rgba(0, 0, 0, .85);
+				line-height: 2.5;
+			}
+			.rightCard {
+				border-style: dashed;
+				font-size: 13px;
+			}
+			.cardInfo > div {
+				margin-bottom: 3px;
+			}
+			.infoTitle {
+				color: rgba(0, 0, 0, .75);
+				font-size: 22px;
+			}
+		}
+		label {
+			padding: 0 0 8px;
+			color: rgba(0,0,0,.85);
+		}
+		.inputTip {
+			color: rgba(0, 0, 0, .35);
+		}
+	}
+}
+.alertForm {
+	:global {
+		.ant-form-item-control-wrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.ant-form-item-control-wrapper .ant-form-item-control {
+			width: 400px;
+		}
+	};
+}
+.qrCode {
+	display: inline-block;
+	width: 220px;
+	height: 220px;
+	margin-bottom: 12px;
+	border: 1px solid #e8e8e8;
+}
+.qrTitle {
+	color: #666666;
+	font-size: 18px;
+}
+.topTip {
+	padding: 0 36px 10px;
+	color: #666666;
+}
+.bottomTip {
+	padding: 0 36px;
+	color: #999999;
+}
+.tipsColor {
+	color: #F46B34;
+}
+
+.personal {
+	:global {
+		.ant-tabs-vertical.ant-tabs-left > .ant-tabs-content {
+			padding: 0 24px;
+		}
+	}
+}
+
+@media screen and (max-width:1230px){
+	.setting {
+		.colLeft {
+			margin-right: 60px;
+		}
+		.setContent {
+			.rightInfo {
+				padding-left: 0;
+			}
+		}
+	}
+}

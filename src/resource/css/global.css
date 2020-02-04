@@ -1,0 +1,51 @@
+body {
+	background: #F1F2F6 !important;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+#root {
+	height: 100%;
+	/*min-height: 610px; 临时注释*/
+}
+
+body ol,
+body ul,
+body dl {
+	margin: 0;
+	padding:0;
+	padding-inline-start: 0;
+}
+		
+/* start 分页效果 */
+ul.ant-table-pagination.ant-pagination {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	position: relative;
+}
+
+ul.ant-table-pagination.ant-pagination li.ant-pagination-total-text {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/* end 分页效果 */
+
+
+/*  antd 控件修正 开始 */
+
+	/* FormItem修正嵌套间距过大 */
+	.ant-form-item-control > .ant-form-item:last-child,
+	.ant-form-item [class^="ant-col-"] > .ant-form-item:only-child {
+		margin-bottom: -24px;
+	}
+	
+	/* FormItem修穿梭框位移问题 */
+	.ant-transfer-list-body-not-found {
+		-webkit-transform: translateY(0%) !important;
+		transform: translateY(0%) !important;
+	}
+
+/* antd 控件修正 结束 */

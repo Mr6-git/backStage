@@ -1,0 +1,201 @@
+.title {
+	font-size: 18px;
+	font-weight: lighter;
+}
+.total {
+	display: flex;
+	align-items: center;
+	// min-width: 888px;
+	height: 145px;
+	padding: 5px 0 10px;
+	margin-top: -10px;
+	border-bottom: 1px dotted #E9E9E9;
+}
+.totalItem {
+	border-right: 1px solid #dfdfdf;
+}
+.colItem {
+	position: relative;
+}
+.colItem::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 140px;
+	border-right: 1px solid #dfdfdf;
+}
+.tip {
+	color: #999999;
+	text-align: center;
+}
+.number {
+	color: rgba(0, 0, 0, 0.85);
+	font-size: 44px;
+}
+.topline {
+	position: relative;
+	padding-top: 20px;
+}
+.topline::after {
+	content: '';
+	position: absolute;
+	pointer-events: none;
+	transform-origin: 0 0;
+	top: 0;
+	left: -24px;
+	width: calc(100% + 48px);
+	height: 100%;
+	border-top: 1px solid #e8e8e8;
+}
+.chartWrap {
+	width: 120px;
+	margin: 0 auto;
+}
+.midTitle {
+	margin: 0 0 10px;
+	color: #333333;
+	font-size: 16px;
+}
+.spread {
+	:global {
+		.ant-list-header {
+			border: 0px !important;
+			color: #999999;
+			padding-bottom: 5px;
+		}
+		.ant-col {
+			line-height: 28px;
+		}
+	}
+}
+.refresh {
+	margin: 0px 0px 0px 16px;
+	color: #999999;
+	font-size: 23px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+.progressWrap {
+	padding-right: 5px;
+	:global {
+		.ant-row {
+			padding: 4px 0;
+		}
+		.ant-progress-status-success .ant-progress-text {
+			color: rgba(0, 0, 0, 0.45);
+		}
+	}
+}
+.progressWrap2 {
+	padding-right: 10px;
+}
+.tableWrap {
+	:global {
+		.ant-row {
+			padding: 2px 0;
+		}
+	}
+}
+.agencyPop {
+	font-size: 12px;
+}
+
+.leftWrap {
+	:global {
+		.ant-select-selection {
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+	}
+}
+.rightWrap {
+	:global {
+		.ant-select-selection {
+			border-left-color: transparent;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+		.ant-select-selection:hover {
+			border-left-color: #40a9ff;
+		}
+	}
+}
+.colBordered {
+	height: 100%;
+	width: 50%;
+	:global {
+		.ant-col-12 {
+			border-right: 1px solid #E8E8E8;
+		}
+	}
+}
+
+.overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.font12 {
+	font-size: 12px;
+}
+.font13 {
+	margin-top: 5px;
+	font-size: 13px;
+}
+.orange {
+	color: #FF9C5A;
+}
+.green {
+	color: #4DCB73;
+}
+.grassGreen {
+	color: #75BC74
+}
+.mGrey {
+	color: #333333;
+}
+.font14 {
+	font-size: 14px;
+}
+.font15 {
+	font-size: 15px;
+}
+
+.fortureBtn {
+	margin: 10px 0 20px 0;
+}
+
+.fortureBtn_title {
+	font-size: 18px;
+	color: #000;
+}
+
+.progress{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-top: 30px;
+}
+
+.p_one {
+	margin: -3px;
+	font-size: 16px;
+	color: #000;
+}
+
+.p_two {
+	font-size: 14px;
+	margin: 0;
+	margin-top: 8px;
+}
+
+.fortuneBox {
+	overflow-x: auto;
+	:global {
+		.ant-row {
+			min-width: 1350px;
+		}
+	}
+}

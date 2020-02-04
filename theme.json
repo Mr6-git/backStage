@@ -1,0 +1,7 @@
+{
+	"@blue-color": "#1890ff",
+	"@default-color": "#333333",
+	"@grey-color": "#999999",
+	"@white-color": "#ffffff",
+	"@border": "1px solid #e8e8e8"
+}

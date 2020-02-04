@@ -1,0 +1,279 @@
+.treeMenu {
+	min-width: 210px;
+	max-width: 260px;
+	flex: none;
+	border-right: #e3e3e3 1px solid;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.searchInput {
+	width: 200px;
+	flex: 0 0 auto;
+}
+
+.treeGap {
+	:global {
+		.ant-dropdown-link {
+			position: absolute;
+			right: 6px;
+			display: none;
+			z-index: 2;
+			color: #000;
+		}
+		.ant-tree-node-content-wrapper:hover {
+			.ant-dropdown-link {
+				display: inline;
+			}
+		}
+		.ant-tree-title {
+			display: inline-block;
+			position: initial !important;
+			width: 100%;
+		}
+		.ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper:hover,
+		.ant-tree.ant-tree-directory
+			.ant-tree-child-tree
+			> li
+			span.ant-tree-node-content-wrapper:hover {
+			background: #e6f7ff;
+		}
+		.ant-tree.ant-tree-directory > li span.ant-tree-node-content-wrapper.ant-tree-node-selected,
+		.ant-tree.ant-tree-directory
+			.ant-tree-child-tree
+			> li
+			span.ant-tree-node-content-wrapper.ant-tree-node-selected {
+			background: #1890ff;
+		}
+		.ant-tree li .ant-tree-node-content-wrapper {
+			width: calc(100% - 30px);
+			padding: 0;
+		}
+		.ant-tree.ant-tree-directory > li span.ant-tree-switcher,
+		.ant-tree.ant-tree-directory .ant-tree-child-tree > li span.ant-tree-switcher {
+			margin: 8px 0 0 3px !important;
+		}
+	}
+	.listWrap {
+		display: none;
+		position: absolute;
+		right: 0px;
+		top: 25px;
+		padding: 0;
+		border: none !important;
+		border-radius: 4px;
+	}
+	.treeLi {
+		display: inline-block;
+		position: relative;
+		width: calc(100% - 15px);
+		z-index: 1;
+		& > span {
+			display: inline-block;
+			width: calc(100% - 50px);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+}
+
+.noPic {
+	:global {
+		.ant-upload.ant-upload-select-picture-card {
+			border-color: #f5222d;
+		}
+	}
+}
+
+// strat agency page
+.detailWrap {
+	padding: 0 24px;
+	.title {
+		display: flex;
+		align-items: center;
+		color: #1a1a1a;
+		font-size: 20px;
+		font-weight: bold;
+		.client {
+			margin-left: 14px;
+		}
+	}
+	.mainCont {
+		display: flex;
+		margin-top: 20px;
+		padding: 0 45px;
+		.infoCol {
+			width: 51%;
+			&:nth-child(2) {
+				padding-left: 10px;
+			}
+		}
+		.infoColSec {
+			width: 49%;
+		}
+	}
+	p {
+		display: flex;
+		margin-bottom: 10px;
+		color: #333333;
+		.sLabel {
+			color: #6a6a6a;
+		}
+		.sLabelDesc {
+			width: 84px;
+		}
+	}
+}
+.descItem {
+	display: flex;
+	& > label {
+		display: inline-block;
+		width: 19.6%;
+		padding-right: 3px;
+		color: #1a1a1a;
+		text-align: right;
+	}
+	& > textarea {
+		margin-right: 2%;
+	}
+}
+// end agency page
+
+// start role - detail page
+.roleDetail {
+	padding-bottom: 40px;
+	.headWrap {
+		padding: 0 24px;
+		.checkWrap {
+			display: flex;
+			& > div {
+				display: flex;
+				margin-right: 50px;
+			}
+			.checkText {
+				margin-left: 12px;
+				& > p {
+					margin-bottom: 3px;
+				}
+			}
+		}
+		.btnWrap {
+			padding: 12px 0;
+		}
+	}
+}
+.detailContent {
+	height: 100%;
+	padding: 16px 24px;
+	background: #f0f2f5;
+	:global {
+		.ant-card-wider-padding .ant-card-body {
+			padding: 0;
+		}
+	}
+}
+// end role - detail page
+
+// start filedEditor
+.bottomGap {
+	padding-left: 135px;
+}
+// end filedEditor
+
+.formItemGap_U {
+	:global {
+		.ant-advanced-search-form .ant-form-item {
+			margin-bottom: 10px;
+		}
+		.ant-advanced-search-form .ant-form-item:nth-child(1),
+		.ant-advanced-search-form .ant-form-item:nth-child(2) {
+			margin-bottom: 10px;
+		}
+		.ant-advanced-search-form .ant-form-item:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.detailTopTab {
+	:global {
+		.ant-tabs-nav-wrap {
+			padding: 0 24px 0;
+		}
+		.ant-tabs-bar {
+			display: none;
+		}
+	}
+}
+.detailTab {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.topTitle {
+		position: absolute;
+		left: 0;
+	}
+}
+
+.mainTab {
+	:global {
+		.ant-tabs-bar {
+			display: block;
+			height: 44px;
+		}
+	}
+}
+
+.avaImgWrap {
+    width: 108px;
+    height: 108px;
+    padding: 1px;
+    border-radius: 5px;
+    position: relative;
+    border: 1px dashed #e4e4e4;
+}
+
+.avatarImg {
+	display: inline-block;
+	width: 104px;
+	height: 104px;
+	padding: 1px;
+	cursor: pointer;
+}
+
+.closeIcon {
+	position: absolute;
+	top: -9px;
+	right: -9px;
+	cursor: pointer;
+}
+
+.codeImg {
+	width: 120px;
+	height: 120px;
+	margin-top: 6px;
+}
+
+.pItem {
+	padding: 10px 0 0;
+}
+.pItem:last-of-type {
+	padding-bottom: 10px;
+}
+
+.verticalCenter {
+	display: flex;
+	align-items: center;
+}
+.flexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.flexSp {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
